@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script defer src="/src/app.js"></script>
+    <script defer src="/css/reset.css"></script>
+    <script defer src="/src/script.js"></script>
+    
+    <title>Sports Statistics</title>
+</head>
+<body>
+    <header class="page1">
+        <div class="page1__header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div id="app" class="menu">
+                <!-- <a class="menu__item" href="#">Чемпионат</a>
+                <a class="menu__item" href="#">Команды</a>
+                <a class="menu__item" href="#">Календарь</a>
+                <a class="menu__item" href="#"></a> -->
+                <router-link to="/championship" class="menu__item">Чемпионат</router-link>
+                <router-link to="/teams" class="menu__item">Команды</router-link>
+                <router-link to="/calendar" class="menu__item">Календарь</router-link>
+                <!-- <router-link to="/other">Прочее</router-link> -->
+                
+            </div>
+            <router-view></router-view>            
+        </div>
+    </header>
+    
+</body>
+</html>

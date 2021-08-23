@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: rgb(245, 245, 245);
+}
+img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.page1__header{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(209, 94, 108);
+    padding: 0.06rem;
+}
+.menu{
+    margin-top: 10px;
+    margin-left: 2rem;
+    word-spacing: 30px;
+}
+.menu__item{
+    color: white;
+    text-decoration: none;
+}
