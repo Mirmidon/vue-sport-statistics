@@ -1,27 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
+html {
     background: rgb(245, 245, 245);
 }
-img{
+
+img {
     width: 2.5rem;
     height: 2.5rem;
 }
-.page1__header{
+
+.header__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
     background: rgb(209, 94, 108);
-    padding: 0.06rem;
 }
-.menu{
-    margin-top: 10px;
-    margin-left: 2rem;
+.header__logo {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.header__menu {
     word-spacing: 30px;
+    display: flex;
 }
-.menu__item{
+
+.header__link {
     color: white;
     text-decoration: none;
+    padding: 1rem;
+    flex-basis:auto;
+}
+
+.header__link:hover {
+    background: rgb(129, 5, 20);
+    
 }
