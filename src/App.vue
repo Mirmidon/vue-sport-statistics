@@ -1,7 +1,10 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/championship">Championship</router-link> |
+    <router-link to="/teams">Teams</router-link> |
+    <router-link to="/calendar">Calendar</router-link> |
+    <router-link to="/seasons">Team seasons</router-link>
   </div>
   <router-view/>
 </template>
