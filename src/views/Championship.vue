@@ -9,10 +9,10 @@
         <th>endDate</th>
       </tr>
       <tr v-for="competition in competitions"  v-bind:key="competition.id">
-        <td>{{competition.area.name}}</td>
+        <td>{{competition.area?.name}}</td>
         <td>{{competition.name}}</td>
-        <td>{{competition.currentSeason.startDate}}</td>
-        <td>{{competition.currentSeason.endDate}}</td>
+        <td>{{competition.currentSeason?.startDate}}</td>
+        <td>{{competition.currentSeason?.endDate}}</td>
       </tr>
     </table>
   </div>
@@ -40,8 +40,9 @@ export default {
       // .then(response => {
       //   console.log(response.data);
       // })
-      .then(response => this.competitions = response)
-
+      .then(response => {
+        this.competitions = response.data.competitions
+      })
   }
 }
  </script>
