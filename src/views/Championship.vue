@@ -4,12 +4,14 @@
     <table>
       <tr>
         <th>Area</th>
+        <th>ID</th>
         <th>name</th>
         <th>startDate</th>
         <th>endDate</th>
       </tr>
       <tr v-for="competition in competitions"  v-bind:key="competition.id">
         <td>{{competition.area?.name}}</td>
+        <td>{{competition.area?.id}}</td>
         <td>{{competition.name}}</td>
         <td>{{competition.currentSeason?.startDate}}</td>
         <td>{{competition.currentSeason?.endDate}}</td>
@@ -30,7 +32,7 @@ export default {
   },
   mounted() {
     const apiUrlCompetitions = 'http://api.football-data.org/v2/competitions';
-    const apiToken = 'a9f35907f94f4d8488920a7a119905c9';
+    const apiToken = 'dd045086dcdc4f00b0e16680f114a9d3';
     axios
       .get(`${apiUrlCompetitions}`, {
         headers: {
