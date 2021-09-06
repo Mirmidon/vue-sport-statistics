@@ -5,7 +5,6 @@
     <router-link to="/teams">Teams</router-link><br>
     <router-link to="/calendar">Calendar</router-link><br>
     <router-link to="/seasons">Team seasons</router-link><br>
-  <div>ssssss</div>
   </div>
   <router-view/>
 </template>
